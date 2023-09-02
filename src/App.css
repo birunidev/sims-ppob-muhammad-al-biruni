@@ -1,0 +1,24 @@
+.custom-container {
+  @apply mx-auto max-w-[95%];
+}
+
+.amount-radio input {
+  @apply absolute left-0 top-0 cursor-pointer opacity-0;
+}
+.amount-radio {
+  @apply cursor-pointer;
+}
+.amount-radio span {
+  @apply transition-all;
+}
+.amount-radio input:checked ~ span {
+  @apply border-black font-semibold;
+}
+
+.input {
+  outline: none !important;
+}
+
+.icon-wrapper.is-error svg {
+  @apply fill-primary stroke-primary;
+}
